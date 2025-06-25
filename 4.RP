@@ -1,0 +1,14 @@
+/*Write a program to implement the Scope and Shadowing*/
+fn main() {
+    let x = 5;
+    println!("Outside block, x = {}", x);
+    {
+        let x = x + 1;
+        println!("Inside block, shadowed x = {}", x);
+        let y = 10;
+        println!("Inside block, y = {}", y);
+    }
+    println!("Outside block, x still = {}", x);
+    let x = x * 2;
+    println!("After shadowing again, x = {}", x);
+}
