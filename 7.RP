@@ -1,0 +1,9 @@
+/*Write a program to create and access a tuple.*/
+fn main() {
+    let person = ("Alice", 30, 5.7);
+    println!("Name: {}", person.0);
+    println!("Age: {}", person.1);
+    println!("Height: {}", person.2);
+    let (name, age, height) = person;
+    println!("Destructured -> Name: {}, Age: {}, Height: {}", name, age, height);
+}
