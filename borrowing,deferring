@@ -1,0 +1,13 @@
+fn main() {
+    let x = 10;
+    let y = &x;
+    println!("Borrowed value (y): {}", y);
+    println!("Dereferenced value (*y): {}", *y);
+    let mut a = 5;
+    {
+        let b = &mut a;
+        *b += 1;
+        println!("Inside block, modified value: {}", *b);
+    }
+    println!("After mutable borrow, a: {}", a);
+}
