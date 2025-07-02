@@ -1,0 +1,18 @@
+fn main() {
+    let int_val: i32 = 10;
+    let float_val: f32 = int_val as f32;
+    println!("Integer value: {}", int_val);
+    println!("After casting to float: {}", float_val);
+    let original_float: f64 = 12.75;
+    let int_from_float: i32 = original_float as i32;
+    println!("\nFloat value: {}", original_float);
+    println!("After casting to integer: {}", int_from_float);
+    let char_val: char = 'A';
+    let ascii_val: u8 = char_val as u8;
+    println!("\nCharacter: {}", char_val);
+    println!("ASCII value: {}", ascii_val);
+    let num = 66;
+    let char_from_num = num as u8 as char;
+    println!("\nNumber: {}", num);
+    println!("Character from number: {}", char_from_num);
+}
