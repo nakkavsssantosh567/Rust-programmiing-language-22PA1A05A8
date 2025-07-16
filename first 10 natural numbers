@@ -1,0 +1,11 @@
+/*Write a program to Print First 10 Natural Numbers using Loop */
+fn main() {
+    let mut num = 1;
+    loop {
+        if num > 10 {
+            break;
+        }
+        println!("{}", num);
+        num += 1;
+    }
+}
